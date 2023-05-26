@@ -34,7 +34,7 @@ function FixedPlugin(props) {
           <i className="fa fa-cog fa-2x" />
         </DropdownToggle>
         <ul className="dropdown-menu show">
-          <li className="header-title">SIDEBAR BACKGROUND</li>
+          <li className="header-title">Fondos</li>
           <li className="adjustments-line">
             <div className="badge-colors text-center">
               <Badge
@@ -70,7 +70,7 @@ function FixedPlugin(props) {
             <ThemeContext.Consumer>
               {({ changeTheme }) => (
                 <>
-                  <span className="color-label">LIGHT MODE</span>{" "}
+                  <span className="color-label">Modo oscuro</span>{" "}
                   <Badge
                     className="light-badge mr-2"
                     onClick={() => changeTheme(themes.light)}
@@ -79,7 +79,7 @@ function FixedPlugin(props) {
                     className="dark-badge ml-2"
                     onClick={() => changeTheme(themes.dark)}
                   />{" "}
-                  <span className="color-label">DARK MODE</span>{" "}
+                  <span className="color-label">Modo oscuro</span>{" "}
                 </>
               )}
             </ThemeContext.Consumer>
@@ -91,7 +91,7 @@ function FixedPlugin(props) {
               block
               className="btn-round"
             >
-              Download Now
+              Descarga
             </Button>
             <Button
               color="default"
@@ -100,10 +100,10 @@ function FixedPlugin(props) {
               outline
               href="https://demos.creative-tim.com/black-dashboard-react/#/documentation/tutorial"
             >
-              Documentation
+              Documentación
             </Button>
           </li>
-          <li className="header-title">Want more components?</li>
+          <li className="header-title">Desea más componentes?</li>
           <li className="button-container">
             <Button
               href="https://www.creative-tim.com/product/black-dashboard-pro-react"
@@ -112,7 +112,7 @@ function FixedPlugin(props) {
               block
               color="danger"
             >
-              Get pro version
+              Versión Pro
             </Button>
           </li>
         </ul>

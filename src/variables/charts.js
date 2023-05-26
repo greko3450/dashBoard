@@ -81,22 +81,22 @@ let chartExample1 = {
 
     return {
       labels: [
-        "JAN",
-        "FEB",
-        "MAR",
-        "APR",
-        "MAY",
-        "JUN",
-        "JUL",
-        "AUG",
-        "SEP",
-        "OCT",
-        "NOV",
-        "DEC",
+        "Jun",
+        "Feb",
+        "Mar",
+        "Abr",
+        "May",
+        "Jun",
+        "Jul",
+        "Ago",
+        "Sel",
+        "Ocy",
+        "Nov",
+        "Dic",
       ],
       datasets: [
         {
-          label: "My First dataset",
+          label: "Ventas",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -171,22 +171,22 @@ let chartExample1 = {
 
     return {
       labels: [
-        "JAN",
-        "FEB",
-        "MAR",
-        "APR",
-        "MAY",
-        "JUN",
-        "JUL",
-        "AUG",
-        "SEP",
-        "OCT",
-        "NOV",
-        "DEC",
+        "Jun",
+        "Feb",
+        "Mar",
+        "Abr",
+        "May",
+        "Jun",
+        "Jul",
+        "Ago",
+        "Sel",
+        "Ocy",
+        "Nov",
+        "Dic",
       ],
       datasets: [
         {
-          label: "My First dataset",
+          label: "Ventas",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -336,10 +336,10 @@ const chartExample4 = {
     gradientStroke.addColorStop(0, "rgba(66,134,121,0)"); //green colors
 
     return {
-      labels: ["JUL", "AUG", "SEP", "OCT", "NOV"],
+      labels: ["Jul", "Ago", "Sel", "Oct", "Nov"],
       datasets: [
         {
-          label: "My First dataset",
+          label: "Mis estadisticas",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#00d6b4",

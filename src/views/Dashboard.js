@@ -21,7 +21,7 @@ import React, { useState, useEffect} from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react plugin used to create charts
-import { Line, Bar } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 
 // reactstrap components
 import {
@@ -47,9 +47,7 @@ import {
 // core components
 import {
   chartExample1,
-  chartExample2,
-  chartExample3,
-  chartExample4,
+ 
 } from "variables/charts.js";
 import { useDispatch, useSelector } from "react-redux";
 import { allUser, sortUser } from "../redux/actions";
@@ -85,8 +83,8 @@ function Dashboard(props) {
               <CardHeader>
                 <Row>
                   <Col className="text-left" sm="6">
-                    <h5 className="card-category">Total Shipments</h5>
-                    <CardTitle tag="h2">Performance</CardTitle>
+                    <CardTitle tag="h3">Ventas Mensuales</CardTitle>
+                    <h5 className="card-category">tortas</h5>
                   </Col>
                   <Col sm="6">
                     <ButtonGroup
@@ -104,7 +102,7 @@ function Dashboard(props) {
                         onClick={() => setBgChartData("data1")}
                       >
                         <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                          Accounts
+                          Cuenta
                         </span>
                         <span className="d-block d-sm-none">
                           <i className="tim-icons icon-single-02" />
@@ -118,10 +116,10 @@ function Dashboard(props) {
                         className={classNames("btn-simple", {
                           active: bigChartData === "data2",
                         })}
-                        onClick={() => setBgChartData("data2")}
+                        onClick={() => setBgChartData("data2")} // aqui se coloca el handler
                       >
                         <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                          Purchases
+                          Pagos
                         </span>
                         <span className="d-block d-sm-none">
                           <i className="tim-icons icon-gift-2" />
@@ -138,7 +136,7 @@ function Dashboard(props) {
                         onClick={() => setBgChartData("data3")}
                       >
                         <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                          Sessions
+                          Secciones
                         </span>
                         <span className="d-block d-sm-none">
                           <i className="tim-icons icon-tap-02" />
@@ -150,9 +148,9 @@ function Dashboard(props) {
               </CardHeader>
               <CardBody>
               
-                <div className="chart-area">
+                <div className="chart-area"> 
                   <Line
-                    data={chartExample1[bigChartData]}
+                    data={chartExample1[bigChartData]} // esta es el area de los
                     options={chartExample1.options}
                   />
                 </div>
@@ -162,78 +160,21 @@ function Dashboard(props) {
             </Card>
           </Col>
         </Row>
-        <Row>
-          <Col lg="4">
-            <Card className="card-chart">
-              <CardHeader>
-                <h5 className="card-category">Total Shipments</h5>
-                <CardTitle tag="h3">
-                  <i className="tim-icons icon-bell-55 text-info" /> 763,215
-                </CardTitle>
-              </CardHeader>
-              <CardBody>
-                <div className="chart-area">
-                  <Line
-                    data={chartExample2.data}
-                    options={chartExample2.options}
-                  />
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col lg="4">
-            <Card className="card-chart">
-              <CardHeader>
-                <h5 className="card-category">Daily Sales</h5>
-                <CardTitle tag="h3">
-                  <i className="tim-icons icon-delivery-fast text-primary" />{" "}
-                  3,500€
-                </CardTitle>
-              </CardHeader>
-              <CardBody>
-                <div className="chart-area">
-                  <Bar
-                    data={chartExample3.data}
-                    options={chartExample3.options}
-                  />
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col lg="4">
-            <Card className="card-chart">
-              <CardHeader>
-                <h5 className="card-category">Completed Tasks</h5>
-                <CardTitle tag="h3">
-                  <i className="tim-icons icon-send text-success" /> 12,100K
-                </CardTitle>
-              </CardHeader>
-              <CardBody>
-                <div className="chart-area">
-                  <Line
-                    data={chartExample4.data}
-                    options={chartExample4.options}
-                  />
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-        </Row>
-
+       
         {/* partes */}
         <Row>
           <Col lg="6" md="12">
           
             <Card>
               <CardHeader>
-                <CardTitle tag="h4">Simple Table</CardTitle>
-              </CardHeader>
+                <CardTitle tag="h3">Calificaciones de clientes</CardTitle>
+                </CardHeader>
               <CardBody>
                 <Table className="tablesorter" responsive>
                  {/* sadasdasdsadsad */}
                   <thead className="text-primary">
                     <tr>
-                      <th>Name
+                      <th>Nombre
                     
                       <select value={ordered} onChange={(event) => handleChange(event)}>
                        
@@ -247,10 +188,10 @@ function Dashboard(props) {
             
                       </select>
                       </th>
-                      <th>Fecha</th>
-                      <th>Dirección</th>
+                      <th>Producto</th>
+                      <th>Comentario</th>
                       
-                      <th className="text-center">Salary</th>
+                      <th className="text-center">Calificación</th>
                     </tr>
                   </thead>
                   <tbody>
