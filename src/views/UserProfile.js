@@ -40,28 +40,19 @@ function UserProfile() {
           <Col md="8">
             <Card>
               <CardHeader>
-                <h5 className="title">Edit Profile</h5>
+                <h5 className="title">Editar perfil</h5>
               </CardHeader>
               <CardBody>
                 <Form>
                   <Row>
                     <Col className="pr-md-1" md="5">
-                      <FormGroup>
-                        <label>Company (disabled)</label>
-                        <Input
-                          defaultValue="Creative Code Inc."
-                          disabled
-                          placeholder="Company"
-                          type="text"
-                        />
-                      </FormGroup>
+                     
                     </Col>
                     <Col className="px-md-1" md="3">
                       <FormGroup>
-                        <label>Username</label>
+                        <label>Usuario</label>
                         <Input
-                          defaultValue="michael23"
-                          placeholder="Username"
+                          placeholder="Usuario..."
                           type="text"
                         />
                       </FormGroup>
@@ -69,29 +60,27 @@ function UserProfile() {
                     <Col className="pl-md-1" md="4">
                       <FormGroup>
                         <label htmlFor="exampleInputEmail1">
-                          Email address
+                          Correo electronico
                         </label>
-                        <Input placeholder="mike@email.com" type="email" />
+                        <Input placeholder="Correo electronico..." type="email" />
                       </FormGroup>
                     </Col>
                   </Row>
                   <Row>
                     <Col className="pr-md-1" md="6">
                       <FormGroup>
-                        <label>First Name</label>
+                        <label>Nombres</label>
                         <Input
-                          defaultValue="Mike"
-                          placeholder="Company"
+                          placeholder="Nombre..."
                           type="text"
                         />
                       </FormGroup>
                     </Col>
                     <Col className="pl-md-1" md="6">
                       <FormGroup>
-                        <label>Last Name</label>
+                        <label>Apellidos</label>
                         <Input
-                          defaultValue="Andrew"
-                          placeholder="Last Name"
+                          placeholder="Apellidos..."
                           type="text"
                         />
                       </FormGroup>
@@ -100,10 +89,9 @@ function UserProfile() {
                   <Row>
                     <Col md="12">
                       <FormGroup>
-                        <label>Address</label>
+                        <label>Dirección</label>
                         <Input
-                          defaultValue="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
-                          placeholder="Home Address"
+                          placeholder="Dirección..."
                           type="text"
                         />
                       </FormGroup>
@@ -112,40 +100,36 @@ function UserProfile() {
                   <Row>
                     <Col className="pr-md-1" md="4">
                       <FormGroup>
-                        <label>City</label>
+                        <label>Ciudad</label>
                         <Input
-                          defaultValue="Mike"
-                          placeholder="City"
+                          placeholder="Ciudad..."
                           type="text"
                         />
                       </FormGroup>
                     </Col>
                     <Col className="px-md-1" md="4">
                       <FormGroup>
-                        <label>Country</label>
+                        <label>Pais</label>
                         <Input
-                          defaultValue="Andrew"
-                          placeholder="Country"
+                          placeholder="País"
                           type="text"
                         />
                       </FormGroup>
                     </Col>
                     <Col className="pl-md-1" md="4">
                       <FormGroup>
-                        <label>Postal Code</label>
-                        <Input placeholder="ZIP Code" type="number" />
+                        <label>Codigo Postal</label>
+                        <Input placeholder="Codigo postal..." type="number" />
                       </FormGroup>
                     </Col>
                   </Row>
                   <Row>
                     <Col md="8">
                       <FormGroup>
-                        <label>About Me</label>
+                        <label>Pasatiempos</label>
                         <Input
                           cols="80"
-                          defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in
-                            that two seat Lambo."
-                          placeholder="Here can be your description"
+                          placeholder="Describa sus pasatiempos..."
                           rows="4"
                           type="textarea"
                         />
@@ -156,7 +140,7 @@ function UserProfile() {
               </CardBody>
               <CardFooter>
                 <Button className="btn-fill" color="primary" type="submit">
-                  Save
+                  Enviar
                 </Button>
               </CardFooter>
             </Card>
@@ -176,15 +160,13 @@ function UserProfile() {
                       className="avatar"
                       src={require("assets/img/emilyz.jpg")}
                     />
-                    <h5 className="title">Mike Andrew</h5>
+                    <h5 className="title">Nombre</h5>
                   </a>
                   <p className="description">Ceo/Co-Founder</p>
                 </div>
                 <div className="card-description">
-                  Do not be scared of the truth because we need to restart the
-                  human foundation in truth And I love you like Kanye loves
-                  Kanye I love Rick Owens’ bed design but the back is...
-                </div>
+                  
+                </div>  
               </CardBody>
               <CardFooter>
                 <div className="button-container">

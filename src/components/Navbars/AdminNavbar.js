@@ -166,18 +166,18 @@ function AdminNavbar(props) {
                     <img alt="..." src={require("assets/img/anime3.png")} />
                   </div>
                   <b className="caret d-none d-lg-block d-xl-block" />
-                  <p className="d-lg-none">Log out</p>
+                  <p className="d-lg-none">Cerrar sección</p>
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-navbar" right tag="ul">
                   <NavLink tag="li">
-                    <DropdownItem className="nav-item">Profile</DropdownItem>
+                    <DropdownItem className="nav-item">Perfil</DropdownItem>
                   </NavLink>
                   <NavLink tag="li">
-                    <DropdownItem className="nav-item">Settings</DropdownItem>
+                    <DropdownItem className="nav-item">Configuración</DropdownItem>
                   </NavLink>
                   <DropdownItem divider tag="li" />
                   <NavLink tag="li">
-                    <DropdownItem className="nav-item">Log out</DropdownItem>
+                    <DropdownItem className="nav-item">Cerrar sección</DropdownItem>
                   </NavLink>
                 </DropdownMenu>
               </UncontrolledDropdown>
@@ -192,7 +192,7 @@ function AdminNavbar(props) {
         toggle={toggleModalSearch}
       >
         <ModalHeader>
-          <Input placeholder="SEARCH" type="text" value={searchQuery}
+          <Input placeholder="Buscar..." type="text" value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}/>
           <button
             aria-label="Close"
@@ -202,7 +202,7 @@ function AdminNavbar(props) {
             <i className="tim-icons icon-simple-remove" />
           </button>
           <Button color="info" onClick={handleSearch}>
-            Search
+            Buscar
           </Button>
         </ModalHeader>
       </Modal>

@@ -21,7 +21,7 @@ import NotificationAlert from "react-notification-alert";
 
 // reactstrap components
 import {
-  Alert,
+  
   UncontrolledAlert,
   Button,
   Card,
@@ -83,21 +83,11 @@ function Notifications() {
           <Col md="6">
             <Card>
               <CardHeader>
-                <CardTitle tag="h4">Notifications Style</CardTitle>
+                <CardTitle tag="h4">Notificationes</CardTitle>
               </CardHeader>
               <CardBody>
-                <Alert color="info">
-                  <span>This is a plain notification</span>
-                </Alert>
-                <UncontrolledAlert color="info">
-                  <span>This is a notification with close button.</span>
-                </UncontrolledAlert>
-                <UncontrolledAlert className="alert-with-icon" color="info">
-                  <span className="tim-icons icon-bell-55" data-notify="icon" />
-                  <span data-notify="message">
-                    This is a notification with close button and icon.
-                  </span>
-                </UncontrolledAlert>
+                              
+                
                 <UncontrolledAlert className="alert-with-icon" color="info">
                   <span className="tim-icons icon-bell-55" data-notify="icon" />
                   <span data-notify="message">
@@ -113,39 +103,18 @@ function Notifications() {
           <Col md="6">
             <Card>
               <CardHeader>
-                <CardTitle tag="h4">Notification states</CardTitle>
+                <CardTitle tag="h4">Estado de notificaciones</CardTitle>
               </CardHeader>
               <CardBody>
-                <UncontrolledAlert color="primary">
-                  <span>
-                    <b>Primary - </b>
-                    This is a regular notification made with ".alert-primary"
-                  </span>
-                </UncontrolledAlert>
+                
                 <UncontrolledAlert color="info">
                   <span>
-                    <b>Info - </b>
+                    <b>Información - </b>
                     This is a regular notification made with ".alert-info"
                   </span>
                 </UncontrolledAlert>
-                <UncontrolledAlert color="success">
-                  <span>
-                    <b>Success - </b>
-                    This is a regular notification made with ".alert-success"
-                  </span>
-                </UncontrolledAlert>
-                <UncontrolledAlert color="warning">
-                  <span>
-                    <b>Warning - </b>
-                    This is a regular notification made with ".alert-warning"
-                  </span>
-                </UncontrolledAlert>
-                <UncontrolledAlert color="danger">
-                  <span>
-                    <b>Danger - </b>
-                    This is a regular notification made with ".alert-danger"
-                  </span>
-                </UncontrolledAlert>
+                                
+                
               </CardBody>
             </Card>
           </Col>
@@ -156,23 +125,15 @@ function Notifications() {
                   <Row>
                     <Col className="ml-auto mr-auto text-center" md="6">
                       <CardTitle tag="h4">
-                        Notifications Places
-                        <p className="category">Click to view notifications</p>
+                        
+                        <p className="category">Click para ver notificaciones</p>
                       </CardTitle>
                     </Col>
                   </Row>
                   <Row>
                     <Col className="ml-auto mr-auto" lg="8">
                       <Row>
-                        <Col md="4">
-                          <Button
-                            block
-                            color="primary"
-                            onClick={() => notify("tl")}
-                          >
-                            Top Left
-                          </Button>
-                        </Col>
+                        
                         <Col md="4">
                           <Button
                             block
@@ -182,48 +143,8 @@ function Notifications() {
                             Top Center
                           </Button>
                         </Col>
-                        <Col md="4">
-                          <Button
-                            block
-                            color="primary"
-                            onClick={() => notify("tr")}
-                          >
-                            Top Right
-                          </Button>
-                        </Col>
-                      </Row>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col className="ml-auto mr-auto" lg="8">
-                      <Row>
-                        <Col md="4">
-                          <Button
-                            block
-                            color="primary"
-                            onClick={() => notify("bl")}
-                          >
-                            Bottom Left
-                          </Button>
-                        </Col>
-                        <Col md="4">
-                          <Button
-                            block
-                            color="primary"
-                            onClick={() => notify("bc")}
-                          >
-                            Bottom Center
-                          </Button>
-                        </Col>
-                        <Col md="4">
-                          <Button
-                            block
-                            color="primary"
-                            onClick={() => notify("br")}
-                          >
-                            Bottom Right
-                          </Button>
-                        </Col>
+                              
+                       
                       </Row>
                     </Col>
                   </Row>
